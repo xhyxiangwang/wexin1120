@@ -1,0 +1,73 @@
+package com.tencent.mm.protocal.c;
+
+import com.tencent.gmtrace.GMTrace;
+
+public final class brg
+  extends com.tencent.mm.bl.a
+{
+  public int jWQ;
+  public int jXP;
+  
+  public brg()
+  {
+    GMTrace.i(3689511124992L, 27489);
+    GMTrace.o(3689511124992L, 27489);
+  }
+  
+  protected final int a(int paramInt, Object... paramVarArgs)
+  {
+    GMTrace.i(3689645342720L, 27490);
+    if (paramInt == 0)
+    {
+      paramVarArgs = (b.a.a.c.a)paramVarArgs[0];
+      paramVarArgs.fd(1, this.jXP);
+      paramVarArgs.fd(2, this.jWQ);
+      GMTrace.o(3689645342720L, 27490);
+      return 0;
+    }
+    if (paramInt == 1)
+    {
+      paramInt = b.a.a.a.fa(1, this.jXP);
+      int i = b.a.a.a.fa(2, this.jWQ);
+      GMTrace.o(3689645342720L, 27490);
+      return paramInt + 0 + i;
+    }
+    if (paramInt == 2)
+    {
+      paramVarArgs = new b.a.a.a.a((byte[])paramVarArgs[0], unknownTagHandler);
+      for (paramInt = com.tencent.mm.bl.a.a(paramVarArgs); paramInt > 0; paramInt = com.tencent.mm.bl.a.a(paramVarArgs)) {
+        if (!super.a(paramVarArgs, this, paramInt)) {
+          paramVarArgs.cpJ();
+        }
+      }
+      GMTrace.o(3689645342720L, 27490);
+      return 0;
+    }
+    if (paramInt == 3)
+    {
+      b.a.a.a.a locala = (b.a.a.a.a)paramVarArgs[0];
+      brg localbrg = (brg)paramVarArgs[1];
+      switch (((Integer)paramVarArgs[2]).intValue())
+      {
+      default: 
+        GMTrace.o(3689645342720L, 27490);
+        return -1;
+      case 1: 
+        localbrg.jXP = locala.xSv.nm();
+        GMTrace.o(3689645342720L, 27490);
+        return 0;
+      }
+      localbrg.jWQ = locala.xSv.nm();
+      GMTrace.o(3689645342720L, 27490);
+      return 0;
+    }
+    GMTrace.o(3689645342720L, 27490);
+    return -1;
+  }
+}
+
+
+/* Location:              /Users/xianghongyan/decompile/dex2jar/classes2-dex2jar.jar!/com/tencent/mm/protocal/c/brg.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */
